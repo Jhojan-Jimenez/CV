@@ -11,27 +11,32 @@ body{
     display: flex;
     box-sizing: border-box;
     overflow: hidden;
-    left:20px;
-    right: 20px;
+    max-width: 800px;
     min-height: 1200px;
-    margin: 4vh 10vw;
+    margin: auto;
     background-color: #fff;
 }
 
 #izquierda{
     position: relative;
     top: 200px;
+    width: 45%;
 }
 #derecha{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 50%;
+    padding-left: 30px;
     top: 200px;
 }
 #hoja h1{
     position: absolute;
     display: inline-block;
-    width: 300px;
-    left: 30vw;
-    top: 5vh;
+    width: 30%;
+    left: 45%;
+    top: 5%;
 }
 #Foto{
     position: absolute;
@@ -60,7 +65,7 @@ body{
     position: absolute;
     width: 200px;
     height: 200px;
-    background-color: blue;
+    background-color: #27384C;
 }
 #circulo_tr{
     position: absolute;
@@ -71,19 +76,59 @@ body{
     border-radius: 50%;
     background-color: #aa1616;
 }
-#sobre_mi, #idiomas{
+#sobre_mi, #idiomas, #contacto{
     position: relative;
-    width: 40vw;
     top: 100px;
-}
-#sobre_mi h2{
-    text-align: center;
-    padding-bottom: 3%;
 }
 #sobre_mi p{
     text-align: center;
     padding-bottom: 50px;
 }
-#idiomas{
-    
+#contacto li{
+    padding-left: 40px;
 }
+#telefono{
+    background-image: url(assets/imgs/telefono.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+#correo{
+    background-image: url(assets/imgs/correo.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+#vivienda{
+    background-image: url(assets/imgs/casa.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+#idiomas ul{
+    padding-left: 40px;
+}
+#exp_lab , #form_aca, #habilidades{
+    width: 100%;
+    position: relative;
+    margin: 0px auto;
+}
+#hoja h2{
+    color: #fff;
+    background-color: #27384C;
+    text-align: center;
+    margin: 20px 0px;
+}
+#exp_lab article h3{
+    padding: 2% 0px;
+}
+#exp_lab ul{
+    padding-left: 10%;
+}
+#form_aca h3{
+    padding-top: 2%;
+}
+#habilidades ul{
+    padding-left: 20%;
+}
+#habilidades li{
+    padding-bottom: 3%;
+}
+
