@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(129, 128, 128);
+}
+
+#hoja{
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    left:20px;
+    right: 20px;
+    min-height: 1200px;
+    margin: 4vh 10vw;
+    background-color: #fff;
+}
+
+#izquierda{
+    position: relative;
+    top: 200px;
+}
+#derecha{
+    position: relative;
+    top: 200px;
+}
+#hoja h1{
+    position: absolute;
+    display: inline-block;
+    width: 300px;
+    left: 30vw;
+    top: 5vh;
+}
+#Foto{
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    outline: #fff solid 20px;
+    border: 10px solid black;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    top: -150px;
+    left: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#Foto img{
+    position: relative;
+    width: 100%;
+    height: 150%;
+    bottom: 30%;
+}
+#caja_tl{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+#circulo_tr{
+    position: absolute;
+    top: 40px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #aa1616;
+}
+#sobre_mi, #idiomas{
+    position: relative;
+    width: 40vw;
+    top: 100px;
+}
+#sobre_mi h2{
+    text-align: center;
+    padding-bottom: 3%;
+}
+#sobre_mi p{
+    text-align: center;
+    padding-bottom: 50px;
+}
+#idiomas{
+    
+}
