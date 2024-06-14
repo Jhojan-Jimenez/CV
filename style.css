@@ -4,6 +4,8 @@
 }
 body{
     background-color: rgb(129, 128, 128);
+    font-family: 'Montserrat', sans-serif;
+    
 }
 
 #hoja{
@@ -21,6 +23,7 @@ body{
     position: relative;
     top: 200px;
     width: 45%;
+    line-height: 120%;
 }
 #derecha{
     position: relative;
@@ -30,13 +33,17 @@ body{
     width: 50%;
     padding-left: 30px;
     top: 200px;
+    line-height: 120%;
 }
 #hoja h1{
+    color: #27384C;
+    font-size: 300%;
     position: absolute;
     display: inline-block;
-    width: 30%;
-    left: 45%;
+    width: 50%;
+    left: 40%;
     top: 5%;
+
 }
 #Foto{
     position: absolute;
@@ -44,7 +51,7 @@ body{
     width: 200px;
     height: 200px;
     outline: #fff solid 20px;
-    border: 10px solid black;
+    border:  4px solid black;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
@@ -57,7 +64,7 @@ body{
 }
 #Foto img{
     position: relative;
-    width: 100%;
+    left: -6%;
     height: 150%;
     bottom: 30%;
 }
@@ -67,14 +74,29 @@ body{
     height: 200px;
     background-color: #27384C;
 }
-#circulo_tr{
+[id^="circulo"]{
     position: absolute;
-    top: 40px;
-    right: -50px;
-    width: 100px;
-    height: 100px;
     border-radius: 50%;
-    background-color: #aa1616;
+    background: repeating-linear-gradient(
+        135deg, rgb(121, 109, 109),  rgb(113, 101, 101) 2px,  white 1px, white 7px );
+}
+#circulo_tr{
+    top:-2%;
+    right: -5%;
+    width: 15%;
+    height: 10%;
+}
+#circulo_bl{
+    left: -7%;
+    bottom: 5%;
+    width: 15%;
+    height: 10%;
+}
+#circulo_br{
+    right: -5%;
+    bottom: -5%;
+    width: 15%;
+    height: 10%;
 }
 #sobre_mi, #idiomas, #contacto{
     position: relative;
@@ -82,10 +104,15 @@ body{
 }
 #sobre_mi p{
     text-align: center;
-    padding-bottom: 50px;
+    padding: 0px 5% 50px 5%;
+    line-height: 120%;
+}
+#contacto ul{
+    list-style: none;
+    padding: 3% 0px 3% 15%;
 }
 #contacto li{
-    padding-left: 40px;
+    padding: 5% 0px 5% 20%;
 }
 #telefono{
     background-image: url(assets/imgs/telefono.png);
@@ -112,9 +139,15 @@ body{
 }
 #hoja h2{
     color: #fff;
+    font-weight: 400;
     background-color: #27384C;
     text-align: center;
+    padding: 3% 0px;
     margin: 20px 0px;
+}
+#sobre_mi #t_sobre{
+    color: #000;
+    background-color: #ffffff;
 }
 #exp_lab article h3{
     padding: 2% 0px;
@@ -125,10 +158,11 @@ body{
 #form_aca h3{
     padding-top: 2%;
 }
-#habilidades ul{
+#habilidades ul, #idiomas ul{
     padding-left: 20%;
 }
-#habilidades li{
-    padding-bottom: 3%;
+#habilidades li, #idiomas li{
+    font-size: 120%;
+    padding-bottom: 5%;
 }
 
